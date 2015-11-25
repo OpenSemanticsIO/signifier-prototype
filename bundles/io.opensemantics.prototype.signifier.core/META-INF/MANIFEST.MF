@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Prototype Signifier Core
+Bundle-SymbolicName: io.opensemantics.prototype.signifier.core
+Bundle-Version: 0.0.1.qualifier
+Bundle-Vendor: OpenSemantics.io
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: io.opensemantics.prototype.signifier.core,
+ io.opensemantics.prototype.signifier.core.util
+Require-Bundle: org.eclipse.jdt.core;bundle-version="3.11.1",
+ org.eclipse.core.runtime;bundle-version="3.11.0",
+ io.opensemantics.signifier.api;bundle-version="0.0.1",
+ org.eclipse.core.resources;bundle-version="3.10.0",
+ io.opensemantics.prototype.contrib;bundle-version="0.0.1",
+ javax.validation;bundle-version="1.1.0",
+ org.glassfish.javax.json;bundle-version="1.0.4",
+ org.eclipse.persistence.asm;bundle-version="5.0.1",
+ org.eclipse.persistence.moxy;bundle-version="2.6.1"

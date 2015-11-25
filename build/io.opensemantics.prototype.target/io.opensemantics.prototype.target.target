@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="io.opensemantics.prototype.target" sequenceNumber="68">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="org.eclipse.persistence.moxy.feature.group" version="2.6.1.v20150916-55dc7c3"/>
+<repository location="http://download.eclipse.org/rt/eclipselink/updates/2.6.1.v20150916-55dc7c3"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="org.eclipse.emf.common.feature.group" version="2.11.0.v20150805-0538"/>
+<unit id="org.eclipse.rcp.id" version="4.5.1.M20150904-0015"/>
+<unit id="org.eclipse.platform.ide" version="4.5.1.M20150904-0015"/>
+<unit id="org.eclipse.emf.ecore.feature.group" version="2.11.1.v20150805-0538"/>
+<unit id="org.eclipse.jdt.feature.group" version="3.11.1.v20150904-0015"/>
+<repository location="http://download.eclipse.org/eclipse/updates/4.5/R-4.5.1-201509040015/"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="io.opensemantics.signifier.api.feature.feature.group" version="0.0.1.201511240229"/>
+<unit id="javax.validation" version="1.1.0.v201304101302"/>
+<repository location="https://raw.githubusercontent.com/OpenSemanticsIO/signifier-api/cc1605c67eb317e5754610d7d446f87b2f27304a/p2"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="false" type="InstallableUnit">
+<unit id="io.opensemantics.prototype.contrib.feature.feature.group" version="0.0.1.201511241552"/>
+<repository location="https://raw.githubusercontent.com/OpenSemanticsIO/signifier-prototype-contrib/9635dd28020f27048ba1a7bfe3f46b1cdbc0eaad/p2"/>
+</location>
+</locations>
+</target>
