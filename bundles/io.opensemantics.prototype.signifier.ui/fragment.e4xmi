@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_dO3KUHwQEeWua75bAwM43A">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_q8YNwHwREeWua75bAwM43A" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="__y-EEHy_EeWtEqwILT1S1w" elementId="io.opensemantics.prototype.ui.command" commandName="Signifier Prototype Menu"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_DeEPEHy7EeWtEqwILT1S1w" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_JyzKQHzAEeWtEqwILT1S1w" elementId="io.opensemantics.prototype.ui.handler.0" contributionURI="bundleclass://io.opensemantics.prototype.signifier.ui/io.opensemantics.prototype.signifier.ui.MainHandler" command="__y-EEHy_EeWtEqwILT1S1w"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_OnjSsHzAEeWtEqwILT1S1w" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_W8yC0HzBEeWtEqwILT1S1w" elementId="io.opensemantics.prototype.ui.menucontribution.0" parentId="popup">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_Zv640HzBEeWtEqwILT1S1w" elementId="io.opensemantics.prototype.ui.popup.0" label="Signifier Popup" command="__y-EEHy_EeWtEqwILT1S1w">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_rF9M8H2EEeWGMYt-dnX7oQ" coreExpressionId="io.opensemantics.prototype.signifier.ui.coreexpressions.first"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

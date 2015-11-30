@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="io.opensemantics.prototype.signifier.ui.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.definitions">
+      <definition
+            id="io.opensemantics.prototype.signifier.ui.coreexpressions.first">
+         <and>
+            <iterate>
+               <adapt
+                     type="org.eclipse.core.resources.IProject">
+                  <test
+                       property="org.eclipse.core.resources.open"
+                       value="open">
+                  </test>
+               </adapt>
+            </iterate>
+         </and>
+      </definition>
+   </extension>
+
+</plugin>
