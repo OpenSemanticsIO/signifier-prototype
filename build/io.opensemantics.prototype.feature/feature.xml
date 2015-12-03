@@ -227,6 +227,14 @@ and limitations under the License.
    limitations under the License.
    </license>
 
+   <includes
+         id="io.opensemantics.prototype.contrib.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="io.opensemantics.signifier.api.feature"
+         version="0.0.0"/>
+
    <plugin
          id="io.opensemantics.prototype.signifier.core"
          download-size="0"
@@ -243,6 +251,41 @@ and limitations under the License.
 
    <plugin
          id="io.opensemantics.signifier.api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="javax.validation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.glassfish.javax.json"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.persistence.moxy"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.persistence.asm"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.persistence.core"
          download-size="0"
          install-size="0"
          version="0.0.0"
