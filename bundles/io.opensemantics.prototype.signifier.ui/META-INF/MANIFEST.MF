@@ -2,6 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Prototype Signifier UI Elements
 Bundle-SymbolicName: io.opensemantics.prototype.signifier.ui;singleton:=true
+Bundle-Activator: io.opensemantics.prototype.signifier.ui.Activator
 Bundle-Version: 0.0.1.qualifier
 Bundle-Vendor: OpenSemantics.io
 Require-Bundle: org.eclipse.ui.workbench,
@@ -18,6 +19,8 @@ Require-Bundle: org.eclipse.ui.workbench,
  org.eclipse.jdt.core,
  org.eclipse.jdt.ui,
  io.opensemantics.signifier.api;bundle-version="0.0.1",
- io.opensemantics.prototype.signifier.core;bundle-version="0.0.1"
+ io.opensemantics.prototype.signifier.core;bundle-version="0.0.1",
+ org.eclipse.ui,
+ org.eclipse.e4.core.di.extensions
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

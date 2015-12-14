@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Signifier UI Tests
+Bundle-SymbolicName: io.opensemantics.prototype.signifier.ui.tests
+Bundle-Version: 0.0.1.qualifier
+Bundle-Vendor: OpenSemantics.io
+Fragment-Host: io.opensemantics.prototype.signifier.ui;bundle-version="0.0.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit
