@@ -66,14 +66,8 @@
 
   <modules>
     <module>../io.opensemantics.prototype.target</module>
-    
-    
     <module>../../tests/io.opensemantics.prototype.test</module>
-    
     <module>../io.opensemantics.prototype.repository</module>
-    
-    
-    
     <module>../io.opensemantics.prototype.feature</module>
     <module>
       ../../bundles/io.opensemantics.prototype.signifier.core
@@ -81,9 +75,6 @@
     <module>
       ../../bundles/io.opensemantics.prototype.signifier.ui
     </module>
-    
-    
-    
     <module>
       ../../tests/io.opensemantics.prototype.signifier.core.tests
     </module>
