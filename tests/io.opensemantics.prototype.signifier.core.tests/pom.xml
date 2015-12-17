@@ -7,8 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>../../build/io.opensemantics.prototype.parent</relativePath>
   </parent>
-  <groupId>io.opensemantics.prototype.signifier</groupId>
-  <artifactId>io.opensemantics.prototype.signifier.ui.tests</artifactId>
+  <artifactId>io.opensemantics.prototype.signifier.core.tests</artifactId>
   <packaging>eclipse-test-plugin</packaging>
 
   <build>

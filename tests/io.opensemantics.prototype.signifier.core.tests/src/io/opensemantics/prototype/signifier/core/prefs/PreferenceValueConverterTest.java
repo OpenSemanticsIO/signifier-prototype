@@ -1,8 +1,10 @@
-package io.opensemantics.prototype.signifier.ui.prefs.util;
+package io.opensemantics.prototype.signifier.core.prefs;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import io.opensemantics.prototype.signifier.core.prefs.PreferenceValueConverter;
 
 public class PreferenceValueConverterTest {
 

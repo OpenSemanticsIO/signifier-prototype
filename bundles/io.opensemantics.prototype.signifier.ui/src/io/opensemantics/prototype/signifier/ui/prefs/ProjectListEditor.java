@@ -17,32 +17,48 @@
 package io.opensemantics.prototype.signifier.ui.prefs;
 
 import org.eclipse.jface.preference.ListEditor;
+import org.eclipse.jface.preference.PathEditor;
+import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.FileDialog;
 
-import io.opensemantics.prototype.signifier.ui.prefs.util.PreferenceValueConverter;
+import io.opensemantics.prototype.signifier.core.prefs.PreferenceConstants;
+import io.opensemantics.prototype.signifier.core.prefs.PreferenceValueConverter;
 
 public class ProjectListEditor extends ListEditor {
-
-  public ProjectListEditor() {
-    super();
+  
+  public ProjectListEditor(Composite parent) {
+    super(PreferenceConstants.P_PROJECT_LIST, "Projects", parent);
   }
 
-  public ProjectListEditor(String name, String labelText, Composite parent) {
-    super(name, labelText, parent);
-  }
-
-  @Override
-  protected String createList(String[] list) {
-    return PreferenceValueConverter.toProjectString(list);
-  }
-
+  /*
+   * (non-Javadoc)
+   * @see org.eclipse.jface.preference.PathEditor#getNewInputObject()
+   */
   @Override
   protected String getNewInputObject() {
-    return "";
+    FileDialog dialog = new FileDialog(getShell(), SWT.SHEET);
+    dialog.setText("Select a .project");
+    dialog.setFilterExtensions(new String[]{".project"});
+    dialog.setFilterNames(new String[]{"*.project"});
+    return dialog.open();
   }
 
+  /*
+   * (non-Javadoc)
+   * @see org.eclipse.jface.preference.ListEditor#createList(java.lang.String[])
+   */
   @Override
-  protected String[] parseString(String string) {
-    return PreferenceValueConverter.toProjectList(string); 
+  protected String createList(String[] items) {
+    return PreferenceValueConverter.toProjectString(items);
+  }
+
+  /*
+   * (non-Javadoc)
+   * @see org.eclipse.jface.preference.ListEditor#parseString(java.lang.String)
+   */
+  @Override
+  protected String[] parseString(String stringList) {
+    return PreferenceValueConverter.toProjectList(stringList);
   }
 }

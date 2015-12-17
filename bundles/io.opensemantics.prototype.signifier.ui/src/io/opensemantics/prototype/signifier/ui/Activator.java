@@ -16,14 +16,20 @@
 
 package io.opensemantics.prototype.signifier.ui;
 
+import org.eclipse.core.runtime.preferences.InstanceScope;
+import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.eclipse.ui.preferences.ScopedPreferenceStore;
 import org.osgi.framework.BundleContext;
+
+import io.opensemantics.prototype.signifier.core.prefs.PreferenceConstants;
 
 public class Activator extends AbstractUIPlugin {
 
   public static final String PLUGIN_ID = "io.opensemantics.prototype.signifier.ui"; //$NON-NLS-1$
   private static Activator plugin;
-
+  private IPreferenceStore store;
+  
   public Activator () {
   }
 
@@ -34,6 +40,7 @@ public class Activator extends AbstractUIPlugin {
   public void start(BundleContext context) throws Exception {
     super.start(context);
     plugin = this;
+    store = new ScopedPreferenceStore(InstanceScope.INSTANCE, PreferenceConstants.P_NODE_PATH);
   }
 
   /*
@@ -43,6 +50,15 @@ public class Activator extends AbstractUIPlugin {
   public void stop(BundleContext context) throws Exception {
     plugin = null;
     super.stop(context);
+  }
+
+  
+  /* (non-Javadoc)
+   * @see org.eclipse.ui.plugin.AbstractUIPlugin#getPreferenceStore()
+   */
+  @Override
+  public IPreferenceStore getPreferenceStore() {
+    return store;
   }
 
   /**

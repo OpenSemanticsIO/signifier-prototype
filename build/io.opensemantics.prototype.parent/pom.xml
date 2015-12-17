@@ -81,8 +81,11 @@
     <module>
       ../../bundles/io.opensemantics.prototype.signifier.ui
     </module>
+    
+    
+    
     <module>
-      ../../tests/io.opensemantics.prototype.signifier.ui.tests
+      ../../tests/io.opensemantics.prototype.signifier.core.tests
     </module>
   </modules>
 </project>

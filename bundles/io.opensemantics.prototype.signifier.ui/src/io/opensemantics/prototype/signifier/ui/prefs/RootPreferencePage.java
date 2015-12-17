@@ -22,6 +22,7 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 
+import io.opensemantics.prototype.signifier.core.prefs.PreferenceConstants;
 import io.opensemantics.prototype.signifier.ui.Activator;
 
 public class RootPreferencePage extends FieldEditorPreferencePage implements IWorkbenchPreferencePage {
@@ -33,14 +34,12 @@ public class RootPreferencePage extends FieldEditorPreferencePage implements IWo
   @Override
   protected void createFieldEditors() {
 
-    addField(new ProjectListEditor(PreferenceConstants.P_PROJECT_LIST,
-        "Projects",
-        getFieldEditorParent()));
+    addField(new ProjectListEditor(getFieldEditorParent()));
   }
 
   @Override
   public void init(IWorkbench workbench) {
     setPreferenceStore(Activator.getDefault().getPreferenceStore());
-    setDescription("Signifier Preferences");
+    //setDescription("Signifier");
   }
 }
