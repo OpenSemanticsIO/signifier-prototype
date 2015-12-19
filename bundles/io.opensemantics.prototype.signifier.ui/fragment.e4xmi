@@ -7,9 +7,11 @@
     <elements xsi:type="commands:Handler" xmi:id="_JyzKQHzAEeWtEqwILT1S1w" elementId="io.opensemantics.prototype.ui.handler.0" contributionURI="bundleclass://io.opensemantics.prototype.signifier.ui/io.opensemantics.prototype.signifier.ui.MainHandler" command="__y-EEHy_EeWtEqwILT1S1w"/>
   </fragments>
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_OnjSsHzAEeWtEqwILT1S1w" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
-    <elements xsi:type="menu:MenuContribution" xmi:id="_W8yC0HzBEeWtEqwILT1S1w" elementId="io.opensemantics.prototype.ui.menucontribution.0" parentId="popup">
-      <children xsi:type="menu:HandledMenuItem" xmi:id="_Zv640HzBEeWtEqwILT1S1w" elementId="io.opensemantics.prototype.ui.popup.0" label="Signifier Popup" command="__y-EEHy_EeWtEqwILT1S1w">
-        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_rF9M8H2EEeWGMYt-dnX7oQ" coreExpressionId="io.opensemantics.prototype.signifier.ui.coreexpressions.first"/>
+    <elements xsi:type="menu:MenuContribution" xmi:id="_W8yC0HzBEeWtEqwILT1S1w" elementId="io.opensemantics.signifier.ui.context" positionInParent="after=additions" parentId="org.eclipse.ui.navigator.ProjectExplorer#PopupMenu">
+      <children xsi:type="menu:Menu" xmi:id="_mxeMkKXfEeWRA6ZVAPQRuQ" elementId="io.opensemantics.signifier.ui.menu.root" label="Signifier">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_pFI4UKXfEeWRA6ZVAPQRuQ" elementId="io.opensemantics.prototype.signifier.ui.handledmenuitem.addproject" label="Add Project" command="__y-EEHy_EeWtEqwILT1S1w">
+          <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_qD-fIKXfEeWRA6ZVAPQRuQ" coreExpressionId="io.opensemantics.prototype.signifier.ui.coreexpressions.first"/>
+        </children>
       </children>
     </elements>
   </fragments>

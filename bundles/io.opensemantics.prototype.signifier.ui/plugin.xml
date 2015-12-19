@@ -30,7 +30,7 @@
       <page
             class="io.opensemantics.prototype.signifier.ui.prefs.RootPreferencePage"
             id="io.opensemantics.prototype.signifier.ui.prefs.root"
-            name="Signifier Preferences">
+            name="Signifier">
       </page>
    </extension>
    <extension
